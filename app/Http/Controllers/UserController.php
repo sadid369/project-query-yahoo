@@ -47,7 +47,7 @@ class UserController extends Controller
             // ->get();
             // ->where('city','Lake Moiseshaven')
             // ->orderBy('name') 
-            ->paginate(perPage:3,columns:['*'],pageName:'p');
+            ->paginate(perPage:3,columns:['*'],pageName:'p'); 
             // ->cursorPaginate(5);
         return view('allusers', ['data' => $users]);
         // return $users;
